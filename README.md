@@ -1,7 +1,7 @@
 # PISA-vs-Twitter
 How well does the content of country's tweets predict its PISA scores? 
 
-In this weekend project, I learned how to stream tweets and filter for key words. So I ran this line of code in my tweepy streamer file:
+So far, poorly, but I think there's a lot of room to grow. In this weekend project, I learned how to stream tweets and filter for key words. So I ran this line of code in my tweepy streamer file:
 
 ```
 stream.filter(track = ['artist','book','poem','poet','author','learn','science','physics','engineering','math'])
@@ -31,6 +31,6 @@ and then create, in this case, just a one-column pandas dataframe `tweets = pd.D
 
 I then use a scipy linear regression to see how well the PISA scores track the intellectual tweet frequency and plot the results. The size of the bubbles on the scatter plot relate to the amount of tweets coming from a country. 
 
-I included a result I got from processing ~1 GB of tweets over a few-hour time frame.
+I included a result I got from processing ~1 GB of tweets over a few-hour time frame. The r-squared value is 0.22 (see Issues for an image).
 
 
